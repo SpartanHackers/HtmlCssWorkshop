@@ -16,12 +16,12 @@
 
       background: url("BK1.jpg");
 
-      height: ;  
+      height: 100%;  
 
-      background-attachment: ; 
-      background-position: ;
-      background-repeat: ; 
-      background-size: ; 
+      background-attachment: fixed; 
+      background-position: center;
+      background-repeat: no-repeat; 
+      background-size: cover; 
   }      
   body {
       font: 400 15px/1.8 Lato, sans-serif;
@@ -34,12 +34,16 @@
       background: #2d2d30;
   }
   .bg-2 {
-      background: linear-gradient(rgba(0,0,0,.0),rgba(0,0,0,.0)), url(BK1.jpg);
-      background-repeat: no-repeat;
-  }
+      background: linear-gradient(rgba(0,110,0,.5),rgba(0,110,0,.5)), url(BK1.jpg);
+      background-repeat11: no-repeat;
+  11}
+      .bg-2 p {
+          padding: 15px;
+      }
+      
       
   h1 {
-      padding-bottom: ;     
+      padding-bottom: 20px;     
   }      
       
   .nav-tabs li a {
@@ -73,6 +77,14 @@
       padding: 32px;
   }
       
+      footer a {
+          color: white;
+      }
+      
+      footer a:hover {
+          color: red;
+      }
+      
   ul#menu li {
       display:inline;
   }    
@@ -95,14 +107,14 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="">Pictures</a></li>
+        <li><a href="#pictures">Pictures</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div id="home" class="container-fluid text-center parallax1">
-    <div style="margin: .25%">
+    <div style="margin: 25%">
         <h1 style="color: white; font-size: 4vw"><b>Name</b></h1> 
     </div>
 </div>
@@ -111,13 +123,15 @@
 <div id="about" class="bg-1">
     <div class="container text-center">
         <h1>About</h1>
-        <div class="">
+        <div class="row">
             
-            <div class="">
-                <img src="BK1.jpg" width="400" height="300" class="img-responsive">
+            <div class="col-sm-6">
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/dNW0B0HsvVs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-2">
             </div>
             
-            <div class="">
+            <div class="col-sm-4">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus nibh id dolor molestie scelerisque. Curabitur ornare vestibulum diam. Aliquam tempor tortor quis posuere feugiat. Fusce et nibh eu dolor venenatis scelerisque. Nam vulputate mi in dolor pharetra iaculis. Sed efficitur libero sed maximus pretium. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
             </div>
@@ -126,21 +140,21 @@
     </div>
 </div>
 
-<!--Upcoming Event -->
-<div id="" class="bg-2">
+
+<div id="pictures" class="bg-2">
   <div class="container text-center">
     <h1>Pictures</h1>
     <br>
-    <div class="">
-      <div class="">
-          <img src="" alt="event" width="400" height="300" class="img-responsive">
+    <div class="row">
+      <div class="col-sm-4">
+          <img src="BK1.jpg" alt="event" width="400" height="300" class="img-responsive">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus nibh id dolor molestie scelerisque. Curabitur ornare vestibulum diam. Aliquam tempor tortor quis posuere feugiat. </p>      
       </div>
-      <div class="">
-          <img src="BK1.jpg" alt="event" width="400" height="300" class="">
-            <p>L</p> 
+      <div class="col-sm-4">
+          <img src="BK1.jpg" alt="event" width="400" height="300" class="img-responsive">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id justo ut eros tristique condimentum. Morbi quam sapien, iaculis id iaculis maximus, mollis id nibh.</p> 
       </div>
-      <div class="col-sm-1">
+      <div class="col-sm-4">
           <img src="BK1.jpg" alt="event" width="400" height="300" class="img-responsive">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus nibh id dolor molestie scelerisque. Curabitur ornare vestibulum diam. Aliquam tempor tortor quis posuere feugiat. </p> 
       </div>
@@ -151,12 +165,12 @@
 <!-- Footer -->
 <footer class="text-center">
     <ul id="menu" >
-        <li><a href=""><i class="fa fa-facebook" style="font-size:20px; padding-right: 30px"></i></a></li>
-        <li><a href=""><i class="fa fa-twitter" style="font-size:20px; padding-right: 30px"></i></a></li>
-        <li><a href=""><i class="fa fa-youtube" style="font-size:20px; padding-right: 30px"></i></a></li>
+        <li><a href="https://github.com/SpartanHackers/HtmlCssWorkshop"><i class="fa fa-facebook" style="font-size:20px; padding-right: 30px"></i></a></li>
+        <li><a href="https://github.com/SpartanHackers/HtmlCssWorkshop"><i class="fa fa-twitter" style="font-size:20px; padding-right: 30px"></i></a></li>
+        <li><a href="https://github.com/SpartanHackers/HtmlCssWorkshop"><i class="fa fa-youtube" style="font-size:20px; padding-right: 30px"></i></a></li>
         <li><a href=""><i class="fa fa-slack" style="font-size:20px; padding-right: 30px"></i></a></li>
         <li><a href=""><i class="fa fa-trello" style="font-size:20px; padding-right: 30px"></i></a></li>
-        <!--<li><a href="https://github.com/SpartanHackers"><i class="fa fa-" style="font-size:20px; padding-right: 30px"></i></a></li> -->
+        <li><a href="https://github.com/SpartanHackers"><i class="fa fa-github" style="font-size:20px; padding-right: 30px"></i></a></li>
     </ul>
       <p>Created by Your Name | Last Updated 1/29/18 | SPARTAN HACKERS</p> 
 </footer>
